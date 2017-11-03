@@ -593,7 +593,7 @@ void OnboardDisplay::Update(int8_t updmode)
       break;
     case EVSE_STATE_C: // charging
       SetGreenLed(0);
-      SetRedLed(0);
+      SetRedLed(1);
 #ifdef LCD16X2 //Adafruit RGB LCD
       LcdSetBacklightColor(TEAL);
       LcdClear();
